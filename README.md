@@ -4,7 +4,7 @@ Student Petteri Tamminen
 https://tammispete.github.io/project1.html app page
 To Do Calendar - application
 
-App is demonstaed
+App is demonstrated
 
 No errors in code
 Functionality is on par wiht assigment requierments
