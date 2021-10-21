@@ -9,17 +9,17 @@ list.addEventListener('click', function (ev) {
 
 // lisätään listaan uusi kohta
 function newElement() {
-    var li = document.createElement("li");
+    var todoli = document.createElement("li");
     var inputValue = document.getElementById("myInput").value;
-    var t = document.createTextNode(inputValue);
-    li.appendChild(t);
+    var closeText = document.createTextNode(inputValue);
+    todoli.appendChild(closeText);
     var todoInput = document.getElementById("myInput");
     if (inputValue == '' || inputValue == null || inputValue.length < 3) {
         todoInput.style.borderColor = "red";
         alert("You must write something!");
     } else {
         todoInput.style.borderColor = "#3682f4";
-        document.getElementById("myUL").appendChild(li);
+        document.getElementById("myUL").appendChild(todoli);
         var savedList = localStorage.getItem("savedList"); //haetaan lista 
         if (!savedList) {
             savedList = []; // jos ei ole listaa, niin se luo
@@ -33,11 +33,11 @@ function newElement() {
     document.getElementById("myInput").value = "";
 
     // tässä luodaan ruksit ja delete 
-    var span = document.createElement("SPAN");
-    var txt = document.createTextNode("\u00D7");
-    span.className = "close";
-    span.appendChild(txt);
-    li.appendChild(span);
+    var closeButton = document.createElement("SPAN");
+    var closeText = document.createTextNode("\u00D7");
+    closeButton.className = "close";
+    closeButton.appendChild(closeText);
+    todoli.appendChild(closeButton);
 
     // poistaa rivin
     for (i = 0; i < close.length; i++) {
