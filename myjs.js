@@ -40,10 +40,10 @@ function newElement() {
     closeButton.appendChild(closeText);
     todoli.appendChild(closeButton);
 
-    // poistaa rivin
-    var close = document.getElementsByClassName("close");
-    for (i = 0; i < close.length; i++) {
-        close[i].onclick = function () {
+
+    {
+        // sulkee rivin
+        close[closeButton].onclick = function () {
             var div = this.parentElement;
             div.style.display = "none";
         }
