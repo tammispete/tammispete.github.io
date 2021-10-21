@@ -41,14 +41,14 @@ function newElement() {
     todoli.appendChild(closeButton);
 
 
-    
-        // sulkee rivin
-        closeButton.onclick = function () {
-            var div = this.parentElement;
-            div.style.display = "none";
-        }
+
+    // sulkee rivin
+    closeButton.onclick = function () {
+        var div = this.parentElement;
+        div.style.display = "none";
     }
 }
+
 
 
 
