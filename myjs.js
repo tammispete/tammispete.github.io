@@ -41,9 +41,9 @@ function newElement() {
     todoli.appendChild(closeButton);
 
 
-    {
+    
         // sulkee rivin
-        close[closeButton].onclick = function () {
+        closeButton.onclick = function () {
             var div = this.parentElement;
             div.style.display = "none";
         }
