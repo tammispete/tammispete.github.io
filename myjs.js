@@ -20,11 +20,11 @@ function newElement() {
     } else {
         todoInput.style.borderColor = "#3682f4";
         document.getElementById("myUL").appendChild(todoli);
-        var savedList = localStorage.getItem("savedList"); //haetaan lista 
+        var savedList = localStorage.getItem("savedList"); //tallennus localstorageen listaan
         if (!savedList) {
             savedList = []; // jos ei ole listaa, niin se luo
         } else {
-            savedList = JSON.parse(savedList); //paristaan oikeaksi
+            savedList = JSON.parse(savedList); //parsetaan oikeaksi
         }
         savedList.push({ text: inputValue, checked: false }); // lisää uusi rivi listaan
         localStorage.setItem("savedList", JSON.stringify(savedList)); //korvataan uudella, muutetaan tässä STRING
