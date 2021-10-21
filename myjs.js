@@ -19,7 +19,8 @@
             div.style.display = "none";
             }
         }
-    
+        
+        // merkkaa tsekatuksi
         var list = document.querySelector('ul');
         list.addEventListener('click', function(ev) {
             if (ev.target.tagName === 'LI') {
@@ -33,11 +34,12 @@
         var inputValue = document.getElementById("myInput").value;
         var t = document.createTextNode(inputValue);
         li.appendChild(t);
-        if (inputValue == '' || inputValue == null || inputValue.length < 3) {            
-            var x = document.getElementById("myInput");
-            x.style.borderColor = "red";
+        var todoInput = document.getElementById("myInput");
+        if (inputValue == '' || inputValue == null || inputValue.length < 3) {       
+            todoInput.style.borderColor = "red";
             alert("You must write something!");                                   
-        } else {
+        } else {            
+            todoInput.style.borderColor = "#3682f4";            
             document.getElementById("myUL").appendChild(li);            
             var savedList = localStorage.getItem("savedList"); //haetaan lista 
             if (!savedList){  

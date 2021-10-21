@@ -71,7 +71,8 @@ body {
         clear: both;
     }
     input {
-        margin: 0;        
+        margin: 0;
+        border-color: #3682f4;       
         border-radius: 20;
         width: 75%;
         padding: 10px;
