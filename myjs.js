@@ -7,6 +7,8 @@ list.addEventListener('click', function (ev) {
     }
 }, false);
 
+
+//rivin sulkeminen
 var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
